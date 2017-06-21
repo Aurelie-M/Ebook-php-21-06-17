@@ -1,0 +1,260 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+html{
+	/*background: fixed url(../img/grid.png) repeat 0 50%;
+	opacity: 0.7;*/
+	/*background-color: #BCC1B2;*/
+	background-color: #FFFFF0;
+}
+
+body{
+	margin: 0 auto;
+	width : 100%;
+	font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+	font-size: 16px;
+	box-shadow: 0px 0px 7px rgba(0,0,0,0.7);
+}
+.centerZone{
+	margin: 0 auto;
+	width: 95%;
+}
+h1, h2, h3, .slogan, .item-nav-index a, .miniSlogan{
+	font-family: "Calisto MT","Bookman Old Style",Bookman,"Goudy Old Style",Garamond,"Hoefler Text","Bitstream Charter",Georgia,serif;
+	font-size: 28px;
+}
+/***************************************************/
+
+/* header */
+.header{
+	background-color: #27223e;
+}
+.header .centerZone{
+	width: 100%;
+}
+.imgHeader{
+	width: 100%;
+}
+.logo{
+	position: absolute;
+	top: 16%;
+	left: 40%;
+}
+.slogan{
+	position: absolute;
+	top: 39%;
+	left: 32%;
+	font-style: italic;
+	font-weight: bold;
+	color: #fff;
+}
+.slogan:before{
+	content: "“";
+}
+.slogan:after{
+	content: "”";
+}
+.miniSlogan{
+	font-size: 13px;
+	position: absolute;
+	top: 46%;
+	left: 22%;
+	font-style: italic;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	width: 50%;
+}
+
+/***********************************/
+/* footer */
+.footer{
+	background-color: #27223e;
+	padding: 15px 0;
+}
+.footer .centerZone{
+	width: 96%;
+}
+.owner{
+	font-size: 16px;
+	font-style: italic;
+	color: #fff;
+}
+
+/***************************/
+/* nav */
+.nav{
+	background-color: #27223e;
+}
+.nav .centerZone{
+	width: 77%;
+}
+.list-nav-index{
+	padding: 15px 0;
+}
+.item-nav-index{
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 215px;
+}
+.item-nav-index:last-child{
+	margin-right: 0;
+}
+.item-nav-index a, .item-nav-index label{
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+.item-nav-index input{
+	border-radius: 5px;
+	padding: 2px 5px;
+}
+.item-nav-index input.submit{
+	padding: 2px 10px;
+	font-weight: bold;
+}
+.item-nav-index input[placeholder]{
+	font-style: italic;
+}
+.item-nav-index input.submit:hover{
+	color: #27223e;
+	cursor: pointer;
+}
+
+/***************************/
+/* nav */
+.nav-fonction{
+	background-color: #27223e;
+}
+.nav-fonction .centerZone{
+	width: 99%;
+}
+.list-nav-index-one{
+	padding: 15px 0;
+}
+.item-nav-index-one{
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 29px;
+}
+.item-nav-index-one:last-child{
+	margin-right: 0;
+}
+.item-nav-index-one a{
+	font-size: 17px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+
+/***************************/
+/* content */
+
+.content{
+	background-color: #dcdcdc;
+}
+.content .centerZone{
+	width: 96%;
+	padding: 50px 0;
+}
+
+/******************************/
+/* content - general */
+h1{
+	text-align: center;
+	padding-bottom: 50px;
+}
+.item-nav{
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+.list-nav{
+	padding-left: 20px;
+}
+.item-nav a{
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+.item-nav a:hover{
+	color: #27223e;
+	font-style: italic;
+	font-weight: bold;
+}
+.item-nav:hover{
+	list-style-type: square;
+}
+/******************************/
+/* content fiche */
+.ficheList, .otherBooks, .otherEditors, .otherAuthors, .otherTypes{
+	font-weight: bold;
+	font-size: 17px;
+} 
+.ficheList a, .ficheList span{
+	font-weight: normal;
+	font-size: 16px;
+}
+.ficheList a{
+	font-weight: normal;
+	font-size: 16px;
+	text-decoration: none;
+	color: #000;
+}
+.authors li, .editors li, .books li, .types li, .isbn li, .summaries li, .names li, .birth li, .death li, .bio li, .url li, .summary li{
+	padding-bottom: 10px;
+	list-style-type: none;
+}
+.summaries li{
+	padding-bottom: 30px;
+}
+.all{
+	font-weight: bold;
+	color: #27223e;
+	text-decoration: none;
+}
+.all:hover, .ficheList a:hover{
+	font-style: italic;
+	font-weight: bold;
+	color: #27223e;
+} 
+.ficheListBooks a{
+	font-weight: normal;
+	font-size: 16px;
+	text-decoration: none;
+	color: #000;
+}
+.ficheListBooks a:hover{
+	font-style: italic;
+	font-weight: bold;
+	color: #27223e;
+}
+.books .ficheListBooks, .types .ficheListBooks, .authors .ficheListBooks, .editors .ficheListBooks{
+	padding-bottom: 10px;
+	list-style-type: circle;
+}
+.otherBooks + .books{
+	padding-left: 35px;
+	padding-bottom: 30px;
+}
+.otherAuthors + .authors, .otherTypes + .types, .otherEditors + .editors{
+	padding-left: 35px;
+}
+
+/*********************************/
+/* form modifier et supprimer */
+
+.update button, .delete button{
+	border-radius: 5px;
+	padding: 2px 5px;
+}
+button.submit{
+	padding: 2px 10px;
+	font-weight: bold;
+}
+.update button.submit:hover, .delete button.submit:hover{
+	color: #27223e;
+	cursor: pointer;
+}
